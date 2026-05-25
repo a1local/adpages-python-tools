@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adpages-tools"
+version = "0.1.0"
+description = "Dependency-free Python utilities for campaign URLs, LocalBusiness JSON-LD, and Google Ads copy checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "A1 Local", email = "support@a1local.com.au" }
+]
+keywords = [
+  "adpages",
+  "utm",
+  "json-ld",
+  "local-business",
+  "google-ads",
+  "landing-pages"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://a1local.com.au/extensions/"
+Repository = "https://github.com/a1local/adpages-python-tools"
+Issues = "https://a1local.com.au/extensions/support/"
+Documentation = "https://a1local.com.au/extensions/"
+
+[project.scripts]
+adpages-tools = "adpages_tools.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
