@@ -1,0 +1,11 @@
+{
+  "name": "@adpages/python-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Package-local checks for the dependency-free AdPages Python tools scaffold.",
+  "scripts": {
+    "check": "python3 scripts/check.py",
+    "smoke": "python3 -m unittest discover -s tests"
+  }
+}
+
